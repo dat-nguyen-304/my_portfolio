@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/my_portfolio/static/css/main.421c02a8.css",
+    "main.js": "/my_portfolio/static/js/main.e7055ebb.js",
+    "static/js/787.128fc6e9.chunk.js": "/my_portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/bookingcare.png": "/my_portfolio/static/media/bookingcare.606b98f93193611e59cb.png",
+    "static/media/sell-food.png": "/my_portfolio/static/media/sell-food.bd47147af0039c370edc.png",
+    "static/media/hostel.png": "/my_portfolio/static/media/hostel.917eaad5e3741c8ef06a.png",
+    "static/media/self-taught.png": "/my_portfolio/static/media/self-taught.137a29b28753a0238e27.png",
+    "static/media/shopee.png": "/my_portfolio/static/media/shopee.357459032d19cc90b576.png",
+    "static/media/fa-solid-900.ttf": "/my_portfolio/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
+    "static/media/w3-web.png": "/my_portfolio/static/media/w3-web.f2e125da27a741ecc513.png",
+    "static/media/fa-brands-400.ttf": "/my_portfolio/static/media/fa-brands-400.f9ee61fab3c11e2f3ed3.ttf",
+    "static/media/fa-solid-900.woff2": "/my_portfolio/static/media/fa-solid-900.66104b766c3d0462b3c5.woff2",
+    "static/media/nodejs.png": "/my_portfolio/static/media/nodejs.fc3bd1ec69d7a50e685a.png",
+    "static/media/fa-brands-400.woff2": "/my_portfolio/static/media/fa-brands-400.e1a247a5ef41e1975742.woff2",
+    "static/media/fa-regular-400.ttf": "/my_portfolio/static/media/fa-regular-400.abf801b7acb6705a15ad.ttf",
+    "static/media/background.png": "/my_portfolio/static/media/background.981ed9c930112c865e47.png",
+    "static/media/jsp-servlet.png": "/my_portfolio/static/media/jsp-servlet.469a2f48f026d73cbb18.png",
+    "static/media/express.png": "/my_portfolio/static/media/express.cca64e0f360897258ecb.png",
+    "static/media/fa-regular-400.woff2": "/my_portfolio/static/media/fa-regular-400.639d2000c1ece92eaec8.woff2",
+    "static/media/html-css-js.png": "/my_portfolio/static/media/html-css-js.07c642fbe973e4a6442f.png",
+    "static/media/sql.png": "/my_portfolio/static/media/sql.d547b0709f539ca0434c.png",
+    "static/media/fa-v4compatibility.ttf": "/my_portfolio/static/media/fa-v4compatibility.f601162ae669f88823a3.ttf",
+    "static/media/react.png": "/my_portfolio/static/media/react.f2cd161cb7019e16d9e5.png",
+    "static/media/fa-v4compatibility.woff2": "/my_portfolio/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
+    "index.html": "/my_portfolio/index.html",
+    "main.421c02a8.css.map": "/my_portfolio/static/css/main.421c02a8.css.map",
+    "main.e7055ebb.js.map": "/my_portfolio/static/js/main.e7055ebb.js.map",
+    "787.128fc6e9.chunk.js.map": "/my_portfolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.421c02a8.css",
+    "static/js/main.e7055ebb.js"
+  ]
+}
