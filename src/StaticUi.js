@@ -86,7 +86,7 @@ class StaticUi extends Component {
                                         <a target="_blank" href="https://github.com/dat-nguyen-304/selftaught" className="product-enroll-btn btn btn--black">github code</a>
                                     </div>
                                     <div className="product-card-back__enroll demo">
-                                        <a href="/#" className="product-enroll-btn btn btn--black">GitHub Pages</a>
+                                        <a target="_blank" href="https://dat-nguyen-304.github.io/selftaught/" className="product-enroll-btn btn btn--black">GitHub Pages</a>
                                     </div>
                                 </div>
                             </div>
