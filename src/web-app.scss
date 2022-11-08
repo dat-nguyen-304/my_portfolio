@@ -1,0 +1,200 @@
+.web-app {
+    position: relative;
+    width: 100%;
+    max-width: 1080px;
+    margin: 80px auto 0;
+
+    &__list {
+        margin: 60px 0 0 0;
+
+        @include responsive(Mobile) {
+            margin-top: 20px;
+        }
+
+        .col {
+            padding: 0 32px;
+        }
+
+        .product-item {
+            position: relative;
+            perspective: 100rem;
+            height: 48rem;
+
+            @include responsive(Mobile) {
+                margin-bottom: 12px;
+                width: 90%;
+                margin: 12px auto 12px;
+                height: 50rem;
+                max-width: 360px;
+            }
+
+            @include responsive(Tablet) {
+                margin-bottom: 12px;
+                width: 50%;
+                margin: 24px auto;
+                height: 48rem;
+            }
+
+            .product-card {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                backface-visibility: hidden; // không hiện mặt sau, áp dụng khi xoay
+                height: 48rem;
+                box-shadow: 0 0 10px rgba($black-color, .1);
+                border-radius: 2rem;
+                overflow: hidden;
+                transition: transform .8s ease;
+
+                @include responsive(Mobile) {
+                    height: 48rem;
+                }
+
+
+                &--front {
+                    transform: rotateY(0);
+                    background-color: rgba(10, 25, 47, 0.05);
+                    box-shadow: 0px 0px 4px $text-color;
+                }
+
+                &__picture {
+                    background-blend-mode: screen; // trộn màu linear-gradient với hình ảnh khi ko sử dụng rgba
+                    height: 50%;
+                    clip-path: ellipse(80% 70% at 50% 30%);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                &__title {
+                    position: absolute;
+                    top: 14rem;
+                    right: 1rem;
+                    font-size: 2rem;
+                    line-height: 3.6rem;
+                    font-weight: 300;
+                    text-align: right;
+                    text-transform: uppercase;
+                    color: $white-color;
+
+                    &-text {
+                        -webkit-box-decoration-break: clone; // dùng để kiểm soát lề viền của block bị cắt do xuống dòng
+                        padding: 4px 12px;
+                        border-radius: 5rem;
+                        background-image: linear-gradient(to left top,
+                                rgba($black-color, .85),
+                                rgba($black-color, .85));
+                    }
+
+                }
+
+                &-content {
+                    padding-top: 20px;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    color: $text-color;
+
+                    &.food-selling {
+                        padding: 20px 48px 0;
+
+                        @include responsive(Mobile) {
+                            padding: 20px 36px 0;
+                        }
+                    }
+
+                    &.hostel {
+                        padding: 20px 12px 0;
+                    }
+
+                    &.booking-care {
+                        padding: 20px 16px 0;
+                    }
+
+                    &__item {
+                        width: 100%;
+                        margin: 0 auto;
+                        padding: 8px 0;
+                    }
+
+                    &__item:not(:first-child) {
+                        border-top: 1px solid #ccc;
+                    }
+
+                }
+
+                &--back {
+                    transform: rotateY(-180deg);
+                }
+
+                &-back {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    color: $white-color;
+                    text-align: center;
+                    text-transform: uppercase;
+                    background-image: linear-gradient(to left top,
+                            rgba($white-color, .85),
+                            rgba($background-color, .2));
+
+                    &__only {
+                        display: block;
+                        position: absolute;
+                        top: 10%;
+                        left: 0;
+                        right: 0;
+                        font-size: 1.2rem;
+                        font-weight: 100;
+                    }
+
+                    &__enroll {
+                        position: absolute;
+                        width: 100%;
+
+                        &.github {
+                            top: 48%;
+                        }
+
+                        &.github--1 {
+                            top: 30%;
+                        }
+
+                        &.github--2 {
+                            top: 44%;
+                        }
+
+                        &.demo {
+                            top: 64%;
+                        }
+
+                        .product-enroll-btn {
+                            width: 162px;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .product-item:hover .product-card--front {
+            transform: rotateY(180deg);
+        }
+
+        .product-item:hover .product-card--back {
+            transform: rotateY(0);
+        }
+
+    }
+
+    &__see-all {
+        margin-top: 40px;
+
+        .product-btn {
+            width: 240px;
+            text-transform: uppercase;
+        }
+    }
+}

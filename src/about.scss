@@ -1,0 +1,167 @@
+.about {
+    padding-top: 50px;
+
+    .about-container {
+        width: 80%;
+        margin: 0 auto;
+
+        @include responsive(Mobile) {
+            width: 92%;
+        }
+
+        @include responsive(Tablet) {
+            width: 90%;
+        }
+    }
+
+    &__text-box {
+        margin-top: 80px;
+
+        @include responsive(Mobile) {
+            padding: 0 16px;
+            margin-top: 1.2rem;
+        }
+
+        @include responsive(Tablet) {
+            margin-top: 1.2rem;
+        }
+
+        .about-text-heading {
+            color: $text-color;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            margin: 32px 0 12px;
+        }
+
+        .about-text-desc {
+            font-size: 1.4rem;
+            color: $white-color;
+            line-height: 2rem;
+
+            .desc-line {
+                margin: 0.8rem 0;
+
+                .highlight {
+                    color: rgba($text-color, .8);
+                    text-shadow: 0px 0px 1px $text-color;
+                    font-style: italic;
+                }
+
+                .task {
+                    color: #fff;
+                    font-style: italic;
+                    margin-top: 6px;
+                    display: block;
+                }
+            }
+        }
+
+        .about-text-detail {
+            margin-top: 32px;
+        }
+    }
+
+    &__img-box {
+        margin-top: 80px;
+
+        @include responsive(Tablet) {
+            margin-top: 1.8rem;
+        }
+
+        @include responsive(Mobile) {
+            margin-top: 10px;
+        }
+
+        .about-img-heading {
+            color: #64ffda;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            margin: 32px 0 12px;
+            padding: 0 16px;
+        }
+
+        .about-img-skill {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 28px;
+
+            .about-img {
+                display: inline-block;
+                margin: 0 20px;
+                object-fit: contain;
+                outline-offset: 0;
+                transition: transform 0.2s, outline-offset .2s;
+
+                &:hover {
+                    transform: scale(1.5);
+                    z-index: 5;
+                    outline: 1px solid $text-color;
+                    outline-offset: 4px;
+                }
+            }
+
+            .about-img--1 {
+                width: 20%;
+
+                @include responsive(Mobile) {}
+
+                @include responsive(Tablet) {
+                    width: 20%;
+                }
+            }
+
+            .about-img--2 {
+                width: 10%;
+
+                @include responsive(Mobile) {}
+
+                @include responsive(Tablet) {
+                    width: 16%;
+                }
+
+            }
+
+            .about-img--3 {
+                width: 20%;
+
+                @include responsive(Mobile) {}
+
+                @include responsive(Tablet) {
+                    top: 10px;
+                    left: calc(40% + 80px);
+                    width: 20%;
+                }
+            }
+
+            .about-img--4 {
+                width: 10%;
+                margin-top: 24px;
+
+                @include responsive(Mobile) {}
+
+                @include responsive(Tablet) {}
+            }
+
+            .about-img--5 {
+                width: 15%;
+                margin-top: 24px;
+
+                @include responsive(Mobile) {}
+
+                @include responsive(Tablet) {}
+            }
+
+            .about-img--6 {
+                width: 14%;
+                margin-top: 24px;
+
+                @include responsive(Mobile) {}
+
+                @include responsive(Tablet) {}
+            }
+        }
+    }
+}

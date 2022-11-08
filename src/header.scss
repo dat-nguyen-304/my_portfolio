@@ -1,0 +1,127 @@
+.header {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 96vh;
+    clip-path: ellipse(75% 75% at 50% 25%);
+    /*https://bennettfeely.com/clippy/*/
+    user-select: none;
+
+    @include responsive(MobileTablet) {
+        height: 50vh;
+    }
+
+    @include responsive(Mobile) {
+        clip-path: ellipse(90% 75% at 50% 25%);
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-transform: uppercase;
+
+        .header-main-title {
+            position: absolute;
+            top: 24%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 4.2rem;
+            line-height: 4.2rem;
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: 2px;
+            animation: moveToRight 1s linear;
+            width: 100%;
+            text-align: center;
+
+            @include responsive(Mobile) {
+                font-size: 2rem;
+            }
+
+            @include responsive(Tablet) {
+                font-size: 3.2rem;
+            }
+        }
+
+        .header-sub-title {
+            position: absolute;
+            top: 36%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            line-height: 2rem;
+            font-weight: 300;
+            line-height: 36px;
+            color: #fff;
+            animation: moveToLeft 1s linear;
+            text-align: center;
+            width: 96%;
+
+            @include responsive(Mobile) {
+                font-size: 1.2rem;
+                top: 36%;
+            }
+
+            @include responsive(Tablet) {
+                top: 40%;
+                font-size: 1.6rem;
+            }
+        }
+
+        .contact-info {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-transform: none;
+            font-size: 1.4rem;
+            color: $white-color;
+            width: 76%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            @include responsive(Tablet) {
+                font-size: 1.2rem;
+                top: 54%;
+                width: 90%;
+            }
+
+            @include responsive(Mobile) {
+                font-size: 1rem;
+                top: 60%;
+                width: 96%;
+            }
+
+            .contact-item {
+                animation: moveToTop 0.5s linear .5s backwards;
+                margin: 12px 0;
+
+                i {
+                    color: $text-color;
+                    font-size: 2rem;
+                    margin-right: 12px;
+
+                    @include responsive(Tablet) {
+                        margin-right: 2px;
+                    }
+
+                    @include responsive(Mobile) {
+                        margin-right: 2px;
+                    }
+                }
+
+                a {
+                    color: $white-color;
+                }
+
+
+            }
+
+        }
+    }
+
+}

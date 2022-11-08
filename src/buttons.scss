@@ -1,0 +1,79 @@
+@import './color.scss';
+
+.btn {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    width: 180px;
+    height: 40px;
+    border-radius: 24px;
+    z-index: 0;
+    cursor: pointer;
+
+    &--white {
+        background-color: $white-color;
+        color: $text-color;
+
+        &::after {
+            background-color: $white-color;
+        }
+    }
+
+    &--black {
+        background-color: $background-color;
+        color: $text-color;
+
+        &::after {
+            background-color: $background-color;
+        }
+    }
+
+    &--primary {
+        background-color: $medium-primary-color;
+        color: $white-color;
+
+        &::after {
+            background-color: $medium-primary-color;
+        }
+    }
+
+    &::after {
+        display: block;
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 24px;
+        opacity: 1;
+        transition: opacity linear .1s, transform linear .1s;
+    }
+
+    &:hover::after {
+        transform: scaleX(2) scaleY(1.5);
+        opacity: 0;
+    }
+}
+
+.btn-text {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: $dark-primary-color;
+    text-decoration: none;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.btn-text:hover {
+    background-color: $dark-primary-color;
+    color: #fff;
+    transform: translateY(-2px);
+}
