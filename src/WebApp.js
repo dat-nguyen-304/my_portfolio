@@ -56,7 +56,7 @@ class WebApp extends Component {
                                     <div className="product-card-content__item">
                                         App helps tenants find, rent long-term accommodation and helps landlords manage their hostels.
                                     </div>
-                                    <div className="product-card-content__item">My contribution: Contribute the ideas in the project. Design database, layout UI. Implement Back-end code
+                                    <div className="product-card-content__item">My contribution: Contribute the ideas in the project. Design database, layout UI. Implement Back-end code.
                                     </div>
                                     <div className="product-card-content__item">Technologies: Java(JSP/Servlet), HTML/CSS/JS, SQL Server, AJAX and other libraries.</div>
                                 </div>
@@ -87,7 +87,7 @@ class WebApp extends Component {
                                     <div className="product-card-content__item">Personal project (9/2022 - 10/2022)</div>
                                     <div className="product-card-content__item">App helps patients schedule appointments and helps doctors manage their schedules.</div>
                                     <div className="product-card-content__item">I cloned from bookingcare.vn. My main purpose for this project is learning new technology.</div>
-                                    <div className="product-card-content__item">Technologies: ReactJs, SCSS, NodeJs, ExpressJs, Sequelize, MySQL and other libraries.</div>
+                                    <div className="product-card-content__item">Technologies: ReactJs, Redux, NodeJs, ExpressJs, Sequelize, MySQL and other libraries.</div>
                                 </div>
                             </div>
                             <div className="product-card product-card--back">
