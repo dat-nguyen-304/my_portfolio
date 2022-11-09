@@ -54,7 +54,7 @@ class WebApp extends Component {
                                 <div className="product-card-content hostel">
                                     <div className="product-card-content__item">Team project (4 members) (5/2022 - 7/2022)</div>
                                     <div className="product-card-content__item">
-                                        App helps tenants find, rent long-term accommodation and helps landlords manage their hostels.
+                                        My team put a lot of effort into this project. App helps tenants find, rent long-term accommodation and helps landlords manage their hostels.
                                     </div>
                                     <div className="product-card-content__item">My contribution: Contribute the ideas in the project. Design database, layout UI. Implement Back-end code.
                                     </div>
